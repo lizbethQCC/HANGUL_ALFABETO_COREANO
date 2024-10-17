@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Hangul (한글)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aprende Hangul (한글)</h1>
+        <div class="category-selector">
+            <label for="category">Selecciona categoría:</label>
+            <select id="category" onchange="changeCategory()">
+                <option value="vowels">Vocales</option>
+                <option value="consonants">Consonantes</option>
+                <option value="double-consonants">Consonantes dobles</option>
+            </select>
+        </div>
+        <div class="word-card" onclick="toggleInfo()">
+            <div class="korean-char"></div>
+            <div class="romanization"></div>
+            <div class="pronunciation"></div>
+            <div class="example"></div>
+        </div>
+        <div class="controls">
+            <button onclick="markAsKnown()">Lo sé ✓</button>
+            <button onclick="markAsUnknown()">No lo sé ✗</button>
+            <button onclick="nextChar()">Siguiente →</button>
+        </div>
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="score">Puntuación: <span id="score">0</span></div>
+    </div>
+    <script src="funcion.js"></script>
+</body>
+</html>

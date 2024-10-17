@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.category-selector {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.word-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.word-card:hover {
+    transform: scale(1.02);
+}
+
+.korean-char {
+    font-size: 64px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.romanization, .pronunciation, .example {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #2ecc71;
+    width: 0%;
+    transition: width 0.3s;
+    border-radius: 5px;
+}
+
+.score {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+select {
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid #bdc3c7;
+    font-size: 16px;
+    margin: 0 10px;
+}
